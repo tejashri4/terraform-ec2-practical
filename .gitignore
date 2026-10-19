@@ -1,0 +1,10 @@
+@"
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.pem
+*.ppk
+.aws/
+terraform.tfvars
+"@ | Set-Content .gitignore
