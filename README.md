@@ -12,6 +12,55 @@ I used Terraform to create an Amazon EC2 instance on AWS.
 - AWS Provider
 - HCL
 
+
+
+## Create EC2 Instance Using Terraform
+
+Step 1: Create a folder
+
+```
+mkdir Terraform-EC2
+cd Terraform-EC2
+```
+
+Step 2: Create `main.tf` and write Terraform code to configure the AWS provider and EC2 instance.
+
+Step 3: Initialize Terraform
+
+```
+terraform init
+```
+
+Step 4: Validate the code
+
+```
+terraform validate
+```
+
+Step 5: Preview the changes
+
+```
+terraform plan
+```
+
+Step 6: Create the EC2 instance
+
+```
+terraform apply
+```
+
+Type `yes` to confirm.
+
+Step 7: Delete the instance when finished
+
+```
+terraform destroy
+```
+
+Type `yes` to confirm.
+
+Remember the order: `init → validate → plan → apply → destroy`
+
 ## Terraform Commands
 
 Initialize Terraform:
